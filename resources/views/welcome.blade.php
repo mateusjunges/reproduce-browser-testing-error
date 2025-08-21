@@ -23,7 +23,7 @@
         <script>
             const data = () => ({
                 init() {
-                    window.axios.get('/api/events/mateus@junges.dev?start=2023-01-01&end=2023-12-31&timezone=UTC')
+                    window.axios.get('/api/events?start=2023-01-01&end=2023-12-31&timezone=UTC')
                         .then(response => {
                             console.log(response.data);
                         })

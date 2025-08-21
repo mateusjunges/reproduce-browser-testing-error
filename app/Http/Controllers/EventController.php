@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class EventController
 {
-    public function show(Request $request, string $email)
+    public function show(Request $request)
     {
         $response = $this->buildResponse(
             $request->input('start'),

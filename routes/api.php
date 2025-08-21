@@ -8,4 +8,4 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::get('events/{email}', [EventController::class, 'show'])->name('events.show');
+Route::get('events', [EventController::class, 'show'])->name('events.show');
